@@ -16,6 +16,7 @@ Pod::Spec.new do |s|
   s.swift_versions = ['5']
 
   s.source_files = 'Alamofire/Source/*.swift'
+  s.vendored_frameworks = 'Alamofire/Frameworks/*.framework'
 
   s.frameworks = 'CFNetwork'
 end
