@@ -1,5 +1,5 @@
 PODS:
-  - Alamofire (5.7.1)
+  - Alamofire (5.7.2)
 
 DEPENDENCIES:
   - Alamofire (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  Alamofire: a9fc3ea970b99f1d1a8bb2fcf277c03d5e21d356
+  Alamofire: 71f17cb97743b61c8784ca3bccce70b88b7e5651
 
 PODFILE CHECKSUM: 2bc0f780093e83c906fa56a08544982a58630a60
 
