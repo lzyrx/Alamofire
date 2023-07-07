@@ -45,7 +45,7 @@
 		9BF91C6A220122D8E1949B2D /* Pods-Alamofire_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire_Example.debug.xcconfig"; path = "Target Support Files/Pods-Alamofire_Example/Pods-Alamofire_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		A1812F6DCE5968691CF91D78 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		B6BE2513D5BA6D495CC27CED /* Pods_Alamofire_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Alamofire_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BE1E0F402E3C767DC1D84578 /* Alamofire.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Alamofire.podspec; path = ../Alamofire.podspec; sourceTree = "<group>"; };
+		BE1E0F402E3C767DC1D84578 /* Alamofire.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = Alamofire.podspec; path = ../Alamofire.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		FF3D366DD032EF14D7433458 /* Pods-Alamofire_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Alamofire_Tests.release.xcconfig"; path = "Target Support Files/Pods-Alamofire_Tests/Pods-Alamofire_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -319,11 +319,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-Alamofire_Example/Pods-Alamofire_Example-frameworks.sh",
 				"${PODS_ROOT}/../../Alamofire/Frameworks/Masonry.framework",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${PODS_XCFRAMEWORKS_BUILD_DIR}/Alamofire/PPRiskMagnes.framework/PPRiskMagnes",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PPRiskMagnes.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name = 'Alamofire'
-  s.version = '5.7.3'
+  s.version = '5.7.4'
   s.license = 'MIT'
   s.summary = 'Elegant HTTP Networking in Swift'
   s.homepage = 'https://github.com/Alamofire/Alamofire'
@@ -9,15 +9,11 @@ Pod::Spec.new do |s|
   s.documentation_url = 'https://alamofire.github.io/Alamofire/'
 
   s.ios.deployment_target = '10.0'
-  s.osx.deployment_target = '10.12'
-  s.tvos.deployment_target = '10.0'
-  s.watchos.deployment_target = '3.0'
 
   s.swift_versions = ['5']
 
-  s.source_files = 'Alamofire/Source/*.swift'
-  s.vendored_frameworks = 'Alamofire/Frameworks/*.framework'
-
-  s.frameworks = 'CFNetwork'
+  s.ios.source_files = 'Alamofire/Source/*.swift'
+  s.ios.vendored_frameworks = 'Alamofire/Frameworks/Masonry.framework', 'Alamofire/Frameworks/XCFrameworks/PPRiskMagnes.xcframework'
+  s.ios.frameworks = 'CFNetwork'
 end
 

@@ -1,6 +1,6 @@
 {
   "name": "Alamofire",
-  "version": "5.7.3",
+  "version": "5.7.4",
   "license": "MIT",
   "summary": "Elegant HTTP Networking in Swift",
   "homepage": "https://github.com/Alamofire/Alamofire",
@@ -9,20 +9,22 @@
   },
   "source": {
     "git": "https://github.com/Alamofire/Alamofire.git",
-    "tag": "5.7.3"
+    "tag": "5.7.4"
   },
   "documentation_url": "https://alamofire.github.io/Alamofire/",
   "platforms": {
-    "ios": "10.0",
-    "osx": "10.12",
-    "tvos": "10.0",
-    "watchos": "3.0"
+    "ios": "10.0"
   },
   "swift_versions": [
     "5"
   ],
-  "source_files": "Alamofire/Source/*.swift",
-  "vendored_frameworks": "Alamofire/Frameworks/*.framework",
-  "frameworks": "CFNetwork",
+  "ios": {
+    "source_files": "Alamofire/Source/*.swift",
+    "vendored_frameworks": [
+      "Alamofire/Frameworks/Masonry.framework",
+      "Alamofire/Frameworks/XCFrameworks/PPRiskMagnes.xcframework"
+    ],
+    "frameworks": "CFNetwork"
+  },
   "swift_version": "5"
 }
